@@ -4,7 +4,8 @@ from .views import (
     BlogDetailView, 
     BlogListView, 
     BlogCreateView, 
-    BlogUpdateView
+    BlogUpdateView,
+    BlogTemplateView
 )
 
 urlpatterns = [
@@ -13,4 +14,5 @@ urlpatterns = [
     path("post/<int:pk>/edit", BlogUpdateView.as_view(), name="post_edit"),
     path("post/<int:pk>/delete/", BlogDeleteView.as_view(), name="post_delete"),
     path("", BlogListView.as_view(), name="home"),
+    path("home", BlogTemplateView.as_view(), name="posts"),
 ]
