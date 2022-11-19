@@ -30,7 +30,8 @@
     <div class="collapse" id="collapseExample">
       <div class="card card-body">
         <figure>
-          <img src="josh_pic.JPG" class="img-thumbnail" alt="Josh" style="height:50%" style="width:50%">
+          {% load static %}
+          <img src= {% static "josh_pic.JPG" %} class="img-thumbnail" alt="Josh" height="200" width="200">
           <figcaption>Fig.1 - Joshua Burke</figcaption>
       </figure>
           The information within this part serves as and allows me to
